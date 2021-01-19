@@ -1,0 +1,68 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-profilepage-dev-222010-authRole",
+      "UnauthRoleArn": "arn:aws:iam::266511395684:role/amplify-profilepage-dev-222010-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::266511395684:role/amplify-profilepage-dev-222010-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-profilepage-dev-222010-deployment",
+      "UnauthRoleName": "amplify-profilepage-dev-222010-unauthRole",
+      "StackName": "amplify-profilepage-dev-222010",
+      "StackId": "arn:aws:cloudformation:ca-central-1:266511395684:stack/amplify-profilepage-dev-222010/7949ca60-5827-11eb-bd13-0a1e49708808",
+      "AmplifyAppId": "dhq47hbrrl9je"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilepage-dev-222010-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2021-01-19T16:33:51.903Z",
+      "output": {},
+      "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+    }
+  },
+  "auth": {
+    "profilepagef7386ba7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilepage-dev-222010-deployment/amplify-cfn-templates/auth/profilepagef7386ba7-cloudformation-template.yml",
+        "logicalId": "authprofilepagef7386ba7"
+      },
+      "lastPushTimeStamp": "2021-01-19T16:33:51.906Z",
+      "output": {
+        "AppClientSecret": "dq6ag1rd428cjcr6kbns8tfvukpssv67j53dsejf1h762p0bf05",
+        "UserPoolId": "ca-central-1_DnYYoe9lV",
+        "AppClientIDWeb": "48nfq7aht1g6b323ie30vomrmd",
+        "AppClientID": "5cf8khcsdg4vfqegh8lg2s1gt8",
+        "IdentityPoolId": "ca-central-1:143724f7-dfe1-4ca9-b176-6967a981051d",
+        "IdentityPoolName": "profilepagef7386ba7_identitypool_f7386ba7__dev",
+        "UserPoolName": "profilepagef7386ba7_userpool_f7386ba7"
+      },
+      "lastPushDirHash": "hgZE3uICNk42TZdIaKfSXvUk4KM="
+    }
+  },
+  "storage": {
+    "imageUpload": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-profilepage-dev-222010-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageimageUpload"
+      },
+      "lastPushTimeStamp": "2021-01-19T16:33:51.908Z",
+      "output": {
+        "BucketName": "profilepage2913040d9d374f9da1d143c1a86fc89e222010-dev",
+        "Region": "ca-central-1"
+      },
+      "lastPushDirHash": "Y7Pzsn+BpT+QtAnzxongD57NkqA="
+    }
+  }
+}

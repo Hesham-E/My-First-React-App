@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual"
+    }
+  },
+  "auth": {
+    "profilepagef7386ba7": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "imageUpload": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
